@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Dima Lysogor](https://up.htmlacademy.ru/htmlcss/30/user/1117595).
-* Наставник: Илья Приходкин.
+* Наставник: [Илья Приходкин](https://htmlacademy.ru/profile/prikhodkin).
 
 ---
 
