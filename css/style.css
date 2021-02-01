@@ -1,0 +1,46 @@
+/* Fonts */
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans.woff2") format("woff2");
+  src: url("../fonts/PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2");
+  src: url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Variables */
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #333333;
+  --basic-darkestgray: #666666;
+  --basic-white: #ffffff;
+  --basic-neutral: #eeeeee;
+
+  --primary-decor-background: #81B3D2;
+  --secondary-decor-background: #766357;
+  --thirdly-decor-background: #F2F2F2;
+  --line-decor-color: #E5E5E5;
+  --button-decor-color: #ABABAB;
+
+  --rest-icon-lightgray: #CACACA;
+  --rest-icon-darkengray: #A9A9A9;
+  --disabled-icon-color: #6A6A6A;
+  --hover-primary-button: #669EC0;
+  --active-primary-button: #5496BD;
+  --hover-secondary-button: #604E43;
+  --active-secondary-button: #503E33;
+  --hover-background-input: #EBEBEB;
+  --rest-logo-color: #231F20;
+  --active-logo-color: #BDBBBC;
+}
+
+.page-body {
+
+}
