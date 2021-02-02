@@ -41,6 +41,87 @@
   --active-logo-color: #BDBBBC;
 }
 
-.page-body {
+/* Global */
 
+.page-body {
+    min-width: 1280px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--thirdly-decor-background);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navigation */
+
+.main-navigation {
+  background-color: var(--basic-white);
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation li:not(a) {
+  color: var(--secondary-decor-background);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--primary-decor-background);
+}
+
+.site-navigation a:active {
+  /* color: rgba(var(--basic-black), .3); */
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+/* Main content */
+
+.container {
+  width: 1200px;
+  background-color: var(--basic-white);
+}
+
+.main-intro p {
+  font-size: 21px;
+}
+
+.features p {
+  color: var(--basic-extra-dark);
+}
+
+/* .feature-item {
+  background-color: var(--primary-decor-background);
+  color: var(--basic-white);
+}
+*/
+.features-list h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.features-list p,
+.features-list span {
+  color: var(--basic-extra-dark);
+  line-height: 21px;
 }
