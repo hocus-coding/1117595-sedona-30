@@ -17,7 +17,7 @@
   <header class="main-header">
     <img src="img/logo_sedona.svg" width="138" height="70" alt="Логотип">
     <nav class="main-navigation">
-      <ul class="site-navigation">
+      <ul class="site-navigation list-reset">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
@@ -36,14 +36,16 @@
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      <ul class="features-list">
+      <ul class="features-list list-reset">
         <li class="feature-item">
-          <h3>Настоящий городок</h3>
-          <span>— №1 —</span>
-          <p>Седона - не аттракцион для туристов, там
-            течёт своя жизнь</p>
-          <img src="img/city_photo.jpg" width="800" height="256" alt="Фотография городка">
-          <ul class="first-features-list">
+          <div class="coloring-item">
+            <h3>Настоящий городок</h3>
+            <span>— №1 —</span>
+            <p>Седона - не аттракцион для туристов, там
+              течёт своя жизнь</p>
+          </div>
+          <img class="img-options" src="img/city_photo.jpg" width="800" height="256" alt="Фотография городка">
+          <ul class="first-features-list list-reset">
             <li class="first-feature-item">
               <h3>Жильё</h3>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -61,12 +63,14 @@
         </li>
 
         <li class="feature-item">
-          <h3>Там есть Мост дьявола</h3>
-          <span>— №2 —</span>
-          <p>Да, по нему можно пройти! Если конечно
-            вы осмелитесь</p>
-          <img src="img/bridge_photo.jpg" width="800" height="256" alt="Фотография моста">
-          <ul class="second-features-list">
+          <div class="coloring-item">
+            <h3>Там есть Мост дьявола</h3>
+            <span>— №2 —</span>
+            <p>Да, по нему можно пройти! Если конечно
+              вы осмелитесь</p>
+          </div>
+          <img class="img-options" src="img/bridge_photo.jpg" width="800" height="256" alt="Фотография моста">
+          <ul class="second-features-list list-reset">
             <li class="second-feature-item">
               <h3>Небольшая площадь</h3>
               <span>— №3 —</span>
@@ -92,13 +96,13 @@
 
     <section class="searching-hotels">
       <h2 class="visually-hidden">Поиск жилья</h2>
-      <p><b>Заинтересовались?</b></p>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="button-open" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+      <p class="question"><b>Заинтересовались?</b></p>
+      <p class="about-date">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <button class="button-search button-open" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
       <!-- *** Место для формы *** -->
       <!-- календарь иконка -->
-      <button class="button-find" type="submit">Найти</button>
-      <img src="img/map.jpg" width="1199" height="594" alt="Карта местности">
+      <button class="button-search button-find" type="submit">Найти</button>
+      <img class="img-options" src="img/map.jpg" width="1199" height="594" alt="Карта местности">
     </section>
   </main>
 
@@ -107,7 +111,7 @@
       #visitSEDONA<br>
       Телефон: <a class="contact-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
     </p>
-    <ul class="socials">
+    <ul class="socials list-reset">
       <li class="social-button"><a href="#"></a>Твиттер</li>
       <li class="social-button"><a href="#"></a>Фейсбук</li>
       <li class="social-button"><a href="#"></a>Ютуб</li>
