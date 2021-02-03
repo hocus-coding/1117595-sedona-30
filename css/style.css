@@ -101,10 +101,7 @@ overflow: hidden;
 }
 
 .site-navigation a:active {
-  /* color: rgba(var(--basic-black), .3); */
-  color: var(--basic-black);
-  mix-blend-mode: normal;
-  opacity: 0.3;
+  color: rgba(0,0,0,0.3);
 }
 
 /* Main content */
@@ -178,7 +175,6 @@ color: var(--basic-white);
 font-weight: bold;
 text-transform: uppercase;
 border: none;
-outline: none;
 }
 
 .button-open {
@@ -191,6 +187,7 @@ outline: none;
 
 .button-open:active {
   background-color: var(--active-secondary-button);
+  outline: none;
 }
 
 .button-find {
@@ -203,6 +200,7 @@ outline: none;
 
 .button-find:active {
   background-color: var(--active-primary-button);
+  outline: none;
 }
 
 /* Main footer */
@@ -251,3 +249,102 @@ outline: none;
   fill: var(--active-logo-color);
 }
 */
+
+/* Filter */
+
+.filter b {
+  font-size: 21px;
+}
+
+.filter span {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-item a {
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+text-decoration: none;
+color: rgba(0,0,0,0.3);
+border-bottom: 1px dashed var(--primary-decor-background);
+}
+
+.active-item a {
+  color: var(--primary-decor-background);
+  border-bottom: none;
+}
+
+.sorting-item a:hover {
+  color: var(--primary-decor-background);
+  border-bottom: 1px dashed var(--primary-decor-background);
+}
+
+.sorting-item a:active {
+  color: var(--basic-black);
+  border-bottom: none;
+}
+/* Место для стилей иконок */
+
+/* Hotels */
+
+.catalog-item a {
+  text-decoration: none;
+}
+
+.hotel-name {
+  font-size: 21px;
+  color: var(--basic-black);
+}
+
+.hotel-name:hover {
+  color: var(--primary-decor-background);
+}
+
+.hotel-name:active {
+  color: rgba(0,0,0,0.3);
+}
+
+.catalog-item span,
+.catalog-item p {
+font-weight: normal;
+line-height: 21px;
+color: var(--basic-extra-dark);
+}
+
+.rating p {
+font-weight: normal;
+line-height: 21px;
+color: var(--basic-darkestgray);
+background-color: var(--thirdly-decor-background);
+text-align: center;
+}
+
+.button-details {
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--primary-decor-background);
+}
+
+.button-details:hover {
+  background-color: var(--hover-primary-button);
+}
+
+.button-details:active {
+  background-color: var(--active-primary-button);
+}
+
+.button-reserve {
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--secondary-decor-background);
+}
+
+.button-reserve:hover {
+  background-color: var(--hover-secondary-button);
+}
+
+.button-reserve:active {
+  background-color: var(--active-secondary-button);
+}
