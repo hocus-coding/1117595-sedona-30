@@ -131,6 +131,25 @@ overflow: hidden;
   justify-content: center;
 }
 
+
+.catalog-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.hotel {
+  margin-left: 40px;
+}
+
+.hotel-name {
+  grid-column: 1 / -1;
+}
+
+.rating {
+  margin-right: 50px;
+}
+
 /* Navigation */
 .main-navigation {
   background-color: var(--basic-white);
