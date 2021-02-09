@@ -52,7 +52,8 @@ overflow: hidden;
   --active-logo-color: #BDBBBC;
 }
 
-/* Global */
+/* >>> Global <<< */
+
 .page-body {
   min-width: 1280px;
   margin: 0;
@@ -151,6 +152,7 @@ overflow: hidden;
 }
 
 /* Navigation */
+
 .main-navigation {
   background-color: var(--basic-white);
 }
@@ -178,6 +180,7 @@ overflow: hidden;
 }
 
 /* Main content */
+
 .container {
   width: 1200px;
   background-color: var(--basic-white);
@@ -365,6 +368,7 @@ border-bottom: 1px dashed var(--primary-decor-background);
   border-bottom: none;
 }
 /* Место для стилей иконок */
+
 
 /* Hotels */
 
