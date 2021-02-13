@@ -344,6 +344,48 @@
   margin-bottom: 51px;
 }
 
+
+.first-feature-item {
+  padding-top: 150px;
+  position: relative;
+}
+
+.home-icon::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/home_icon.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 72px;
+  top: 70px;
+  left: 162px;
+}
+
+.food-icon::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/food_icon.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 70px;
+  top: 70px;
+  left: 162px;
+}
+
+.gift-icon::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/gift_icon.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 77px;
+  top: 63px;
+  left: 169px;
+}
+
 .features-list h3 {
   font-size: 21px;
   line-height: 21px;
