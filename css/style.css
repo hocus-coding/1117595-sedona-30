@@ -526,15 +526,18 @@ padding: 0;
 .contacts {
   font-size: 21px;
   text-align: center;
+  margin-right: 23px;
+  margin-bottom: 20px;
 }
 
 .contacts p {
-
+  margin: 0;
+  padding-top: 8px;
 }
 
 .contacts span {
-  padding-top: 20px; /* Почему не срабатывает ?!... */
-  padding-right: 10px;
+  display: block;
+  padding-top: 7px;
 }
 
 .contact-phone {
@@ -631,6 +634,15 @@ padding: 0;
 
 
 /* Filter */
+
+.page-catalog {
+  background-image: url(../img/bg_catalog_filter.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 100%;
+  height: 217px;
+
+}
 
 .filter b {
   font-size: 21px;
