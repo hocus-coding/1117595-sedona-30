@@ -505,6 +505,7 @@ padding: 0;
   padding-left: 73px;
   padding-right: 73px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .negative-margin {
@@ -830,17 +831,9 @@ padding: 3px 0 3px 0;
 
 .stars-list {
   display: flex;
+  justify-content: flex-end;
   padding-top: 5px;
-  padding-left: 22px;
   margin-bottom: 45px;
-}
-
-.three-stars {
-  padding-left: 47px;
-}
-
-.two-stars {
-  padding-left: 70px;
 }
 
 .villas-item {
