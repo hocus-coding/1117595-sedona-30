@@ -101,31 +101,33 @@
         <p class="about-date">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <div class="form-center">
           <button class="button-search button-open" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
-          <form class="searching-hotels-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="form-item">
-              <label for="date-in">Дата заезда:</label>
-              <input id="date-in" type="text" name="entry" value="24 апреля 2017">
-              <button class="calendar" type="button">календарь</button>
-            </p>
-            <p class="form-item">
-              <label for="date-out">Дата выезда:</label>
-              <input id="date-out" type="text" name"exit" value="4 июля 2017">
-              <button class="calendar" type="button">календарь</button>
-            </p>
-            <p class="form-item">
-              <label for="adults-number">Взрослые:</label>
-              <button class="more" type="button">больше</button>
-              <input class="sum" id="adults-number" type="number" name"adluts-sum" value="2">
-              <button class="less" type="button">меньше</button>
-            </p>
-            <p class="form-item">
-              <label for="kids-number">Дети:</label>
-              <button class="more" type="button">больше</button>
-              <input class="sum" id="kids-number" type="number" name"kids-sum" value="0">
-              <button class="less" type="button">меньше</button>
-            </p>
-          </form>
-          <button class="button-search button-find" type="submit">Найти</button>
+          <div class="form-wrapper-shadow">
+            <form class="searching-hotels-form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="form-item">
+                <label for="date-in">Дата заезда:</label>
+                <input id="date-in" type="text" name="entry" value="24 апреля 2017">
+                <button class="calendar" type="button" aria-label="календарь"></button>
+              </p>
+              <p class="form-item">
+                <label for="date-out">Дата выезда:</label>
+                <input id="date-out" type="text" name"exit" value="4 июля 2017">
+                <button class="calendar" type="button" aria-label="календарь"></button>
+              </p>
+              <p class="form-item">
+                <label for="adults-number">Взрослые:</label>
+                <button class="more" type="button" aria-label="больше"></button>
+                <input class="sum" id="adults-number" type="number" name"adluts-sum" value="2">
+                <button class="less" type="button" aria-label="меньше"></button>
+              </p>
+              <p class="form-item">
+                <label for="kids-number">Дети:</label>
+                <button class="more" type="button" aria-label="больше"></button>
+                <input class="sum" id="kids-number" type="number" name"kids-sum" value="0">
+                <button class="less" type="button" aria-label="меньше"></button>
+              </p>
+            </form>
+            <button class="button-search button-find" type="submit">Найти</button>
+          </div>
         </div>
         <img class="img-options" src="img/map.jpg" width="1199" height="594" alt="Карта местности">
       </section>
