@@ -449,6 +449,8 @@ outline-offset: -5px;*/
 .form-center {
   width: 568px;
   margin: 0 auto;
+  position: relative;
+
 }
 
 .button-search {
@@ -517,28 +519,55 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .searching-hotels-form {
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
+.adults-kids-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar-item {
+  position: relative;
+}
+
 .form-wrapper-shadow {
   padding: 55px;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  position: absolute;
+}
+
+.form-item label {
+  width: 108px;
 }
 
 .form-item {
   margin: 0;
   margin-bottom: 30px;
-  position: relative;
 }
 
-.form-item label {
-  margin-right: 15px;
+.form-item:nth-child(3),
+.form-item:nth-child(4) {
+  margin-bottom: 54px;
 }
 
-.form-item input {
+.name-item-kids {
+  padding-left: 45px;
+  box-sizing: border-box;
+}
+
+.form-item input,
+.adults-kids-wrapper input {
   background-color: var(--thirdly-decor-background);
   color: var(--basic-black);
   font-family: inherit;
@@ -556,9 +585,17 @@ input[type=number]::-webkit-outer-spin-button {
   width: 333px;
 }
 
-.form-item input[type="number"] {
-  width: 114px;
+.adults-kids-wrapper input[type="number"] {
+  width: 38px;
   text-align: center;
+  margin-right: 14px;
+}
+
+.adults-kids-wrapper {
+  padding-left: 14px;
+  width: 114px;
+  background-color: var(--thirdly-decor-background);
+  box-sizing: border-box;
 }
 
 .calendar {
@@ -573,26 +610,25 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .more {
-  position: absolute;
   background-image: url(../img/plus_icon.svg);
+  background-repeat: no-repeat;
   width: 11px;
   height: 11px;
   border: none;
-  left: 175px;
-  top: 12px;
   padding: 0;
 }
 
 .less {
-  position: absolute;
   background-image: url(../img/minus_icon.svg);
+  background-repeat: no-repeat;
   width: 12px;
   height: 3px;
   border: none;
-  left: 105px;
-  top: 17px;
   padding: 0;
+  margin-right: 14px;
 }
+
+
 
 /* Main footer */
 
