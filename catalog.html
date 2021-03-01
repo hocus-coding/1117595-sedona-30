@@ -32,8 +32,55 @@
       <h1 class="visually-hidden">Поиск жилья</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр поиска</h2>
-        <form class="filter-catalog">
-          <!-- *** Место для формы *** -->
+        <form class="filter-catalog" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="infrastructura">
+            <legend class="field-tittle">Инфраструктура:</legend>
+            <ul class="fields-items list-reset">
+              <li>
+                <input id="pool" type="checkbox" name="swimming-pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input id="parking" type="checkbox" name="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input id="wi-fi" type="checkbox" name="wi-fi">
+                <label for="wi-fi">Wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="hotels-type">
+            <legend class="field-tittle">Тип жилья:</legend>
+            <ul class="fields-items list-reset">
+              <li>
+                <input id="" type="checkbox" name="hotel" checked>
+                <label for="">Гостиница</label>
+              </li>
+              <li>
+                <input id="" type="checkbox" name="motel" checked>
+                <label for="">Мотель</label>
+              </li>
+              <li>
+                <input id="" type="checkbox" name="apartments" checked>
+                <label for="">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="cost">
+            <legend class="field-tittle">Стоимость в сутки (Р):</legend>
+            <div class="min-max-cost">
+              <input type="text" name="min-cost">
+              <input type="text" name="max-cost">
+            </div>
+            <div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <button type="submit">Показать</button>
+          </fieldset>
         </form>
         <div class="sort-block">
           <b>Найдено: 3</b>
