@@ -35,16 +35,16 @@
         <form class="filter-catalog" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="infrastructura">
             <legend class="field-tittle">Инфраструктура:</legend>
-            <ul class="fields-items list-reset">
-              <li>
+            <ul class="fields-item-list list-reset">
+              <li class="field-item">
                 <input id="pool" type="checkbox" name="swimming-pool" checked>
                 <label for="pool">Бассейн</label>
               </li>
-              <li>
+              <li class="field-item">
                 <input id="parking" type="checkbox" name="parking">
                 <label for="parking">Парковка</label>
               </li>
-              <li>
+              <li class="field-item">
                 <input id="wi-fi" type="checkbox" name="wi-fi">
                 <label for="wi-fi">Wi-fi</label>
               </li>
@@ -52,34 +52,37 @@
           </fieldset>
           <fieldset class="hotels-type">
             <legend class="field-tittle">Тип жилья:</legend>
-            <ul class="fields-items list-reset">
-              <li>
-                <input id="" type="checkbox" name="hotel" checked>
-                <label for="">Гостиница</label>
+            <ul class="fields-items-list list-reset">
+              <li class="field-item">
+                <input id="hotel" type="checkbox" name="hotel" checked>
+                <label for="hotel">Гостиница</label>
               </li>
-              <li>
-                <input id="" type="checkbox" name="motel" checked>
-                <label for="">Мотель</label>
+              <li class="field-item">
+                <input id="motel" type="checkbox" name="motel" checked>
+                <label for="motel">Мотель</label>
               </li>
-              <li>
-                <input id="" type="checkbox" name="apartments" checked>
-                <label for="">Апартаменты</label>
+              <li class="field-item">
+                <input id="apartments" type="checkbox" name="apartments" checked>
+                <label for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="cost">
             <legend class="field-tittle">Стоимость в сутки (Р):</legend>
-            <div class="min-max-cost">
-              <input type="text" name="min-cost">
-              <input type="text" name="max-cost">
+            <div class="range-filter">
+              <div class="min-max-cost">
+                <input type="number" name="min-cost" placeholder="От 0">
+                <input type="number" name="max-cost" placeholder="До 3000">
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <button type="submit">Показать</button>
             </div>
-            <div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <button type="submit">Показать</button>
           </fieldset>
         </form>
         <div class="sort-block">

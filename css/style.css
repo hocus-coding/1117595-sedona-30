@@ -518,6 +518,16 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+/* В Safari и Chrome стиль текста меняется */
+input::-webkit-input-placeholder {
+  color: var(--basic-black);
+}
+
+/*в атрибуте placeholder в Firefox применяется псевдокласс ::-moz-placeholder.*/
+input::-moz-placeholder {
+   color: var(--basic-black);
+ }
+
 .searching-hotels-form {
   display: flex;
   flex-wrap: wrap;
@@ -770,6 +780,45 @@ input[type=number]::-webkit-outer-spin-button {
   background-position: 0 0;
   width: 100%;
   min-height: 217px;
+  color: var(--basic-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 74px;
+  padding-right: 74px;
+  box-sizing: border-box;
+}
+
+/*.cost {
+  flex-grow: 3;
+}
+
+.hotels-type {
+  flex-grow: 1;
+}
+
+.infrastructura {
+  flex-grow: 1;
+}*/
+
+.filter-catalog fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.field-tittle {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.field-item label {
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.field-item input[type="checkbox"] {
+
 }
 
 .sorting-list {
