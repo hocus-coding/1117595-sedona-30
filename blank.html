@@ -16,126 +16,22 @@
 <body class="page-body">
   <div class="box-shadow">
     <header class="main-header">
-      <img src="img/logo_sedona.svg" width="138" height="70" alt="Логотип">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logo_sedona.svg" width="138" height="70" alt="Логотип">
+      </a>
       <nav class="main-navigation">
         <ul class="site-navigation list-reset">
-          <li><a href="blank.html">Информация</a></li>
+          <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
-    <main class="container">
-      <h1 class="visually-hidden">Городок Седона</h1>
-      <section class="main-intro">
-        <h2 class="visually-hidden">Приглашение</h2>
-        <img src="img/welcome_pic.svg" width="456" height="350" alt="Картинка с приветствием">
-        <p>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
-      </section>
 
-      <section class="features">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <ul class="features-list list-reset">
-          <li class="feature-item">
-            <div class="coloring-item">
-              <h3>Настоящий<br>городок</h3>
-              <span>— №1 —</span>
-              <p>Седона - не аттракцион для туристов, там<br>
-                течёт своя жизнь</p>
-            </div>
-            <img class="img-options first-feature-pic" src="img/city_photo.jpg" width="800" height="256" alt="Фотография городка">
-            <ul class="first-features-list list-reset">
-              <li class="first-feature-item">
-                <h3 class="home-icon">Жильё</h3>
-                <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
-              </li>
-              <li class="first-feature-item">
-                <h3 class="food-icon">Еда</h3>
-                <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
-              </li>
-              <li class="first-feature-item">
-                <h3 class="gift-icon">Сувениры</h3>
-                <p>Не только китайского, но и местного<br>
-                  производства!</p>
-              </li>
-            </ul>
-          </li>
-
-          <li class="feature-item">
-            <div class="coloring-item">
-              <h3>Там есть<br>Мост дьявола</h3>
-              <span>— №2 —</span>
-              <p>Да, по нему можно пройти! Если конечно<br>
-                вы осмелитесь</p>
-            </div>
-            <img class="img-options second-feature-pic" src="img/bridge_photo.jpg" width="800" height="256" alt="Фотография моста">
-            <ul class="second-features-list list-reset">
-              <li class="second-feature-item">
-                <h3>Небольшая<br>площадь</h3>
-                <span>— №3 —</span>
-                <p>все достопримечательности<br>
-                  находятся очень близко</p>
-              </li>
-              <li class="second-feature-item">
-                <h3>Красивая<br>дорога</h3>
-                <span>— №4 —</span>
-                <p>ехать в седону из лас-вегаса совсем<br>
-                  не скучно!</p>
-              </li>
-              <li class="second-feature-item">
-                <h3>Мало<br>туристов</h3>
-                <span>— №5 —</span>
-                <p>большинство едет в гранд каньон<br>
-                  и толпится там</p>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-
-      <section class="searching-hotels">
-        <h2 class="visually-hidden">Поиск жилья</h2>
-        <p class="question"><b>Заинтересовались?</b></p>
-        <p class="about-date">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <div class="form-center">
-          <button class="button-search button-open" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
-          <div class="form-wrapper-shadow">
-            <form class="searching-hotels-form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="form-item calendar-item">
-                <label for="date-in">Дата заезда:</label>
-                <input id="date-in" type="text" name="entry" placeholder="24 апреля 2017">
-                <button class="calendar" type="button" aria-label="календарь"></button>
-              </div>
-              <div class="form-item calendar-item">
-                <label for="date-out">Дата выезда:</label>
-                <input id="date-out" type="text" name="exit" placeholder="4 июля 2017">
-                <button class="calendar" type="button" aria-label="календарь"></button>
-              </div>
-              <div class="form-item">
-                <label for="adults-number">Взрослые:</label>
-                <div class="adults-kids-wrapper">
-                  <button class="less" type="button" aria-label="меньше"></button>
-                  <input class="sum" id="adults-number" type="number" name="adluts-sum" placeholder="2">
-                  <button class="more" type="button" aria-label="больше"></button>
-                </div>
-              </div>
-              <div class="form-item">
-                <label class="name-item-kids" for="kids-number">Дети:</label>
-                <div class="adults-kids-wrapper">
-                  <button class="less" type="button" aria-label="меньше"></button>
-                  <input class="sum" id="kids-number" type="number" name="kids-sum" placeholder="0">
-                  <button class="more" type="button" aria-label="больше"></button>
-                </div>
-              </div>
-              <button class="button-search button-find" type="submit">Найти</button>
-            </form>
-          </div>
-        </div>
-        <img class="img-options" src="img/map.jpg" width="1199" height="594" alt="Карта местности">
-      </section>
-    </main>
+<main style="width: 100%; min-height: 200px;">
+  <p style="padding: 20px 30px;">вы на пустой странице, уходите от сюда скорее, пока ничего не сломалось.</p>
+  </main>
 
     <footer class="main-footer negative-margin">
       <div class="contacts">

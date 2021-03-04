@@ -518,15 +518,25 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-/* В Safari и Chrome стиль текста меняется */
+.form-item input::placeholder {
+  color: var(--basic-black);
+}
+
+.min-max-cost input::placeholder {
+  color: var(--basic-white);
+}
+
+/*
+В Safari и Chrome стиль текста меняется
 input::-webkit-input-placeholder {
   color: var(--basic-black);
 }
 
-/*в атрибуте placeholder в Firefox применяется псевдокласс ::-moz-placeholder.*/
+в атрибуте placeholder в Firefox применяется псевдокласс ::-moz-placeholder.
 input::-moz-placeholder {
    color: var(--basic-black);
  }
+*/
 
 .searching-hotels-form {
   display: flex;
@@ -772,7 +782,7 @@ input::-moz-placeholder {
 }
 
 
-/* Filter */
+/* >> Filter << */
 
 .filter-catalog {
   background-image: url(../img/bg_catalog_filter.jpg);
@@ -885,8 +895,56 @@ input::-moz-placeholder {
   width: 27px;
   height: 23px;
   top: 0;
-  left: 0px;
+  left: 0;
 }
+
+.range-filter {
+  width: 317px;
+}
+
+.field-title-wrapper {
+  margin-bottom: 11px;
+}
+
+.min-max-cost {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  height: 36px;
+  position: relative;
+  box-sizing: border-box;
+
+}
+
+.min-max-cost input {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  width: 144px;
+
+}
+
+.min-max-cost input:first-child {
+  padding-left: 8px;
+}
+
+.min-max-cost::after {
+  content: "";
+  position: absolute;
+  left: 158px;
+  top: 5px;
+  width: 2px;
+  height: 22px;
+  background-color: var(--basic-white);
+}
+
+
+
+/* >> Sorting list << */
 
 .sorting-list {
   width: 742px;
