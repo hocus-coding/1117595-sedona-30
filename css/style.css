@@ -426,7 +426,11 @@ outline-offset: -5px;*/
 
 /* Searching section */
 
-.searching-hotels img {
+/*.searching-hotels img {
+  display: block;
+}*/
+
+.searching-hotels iframe {
   display: block;
 }
 
@@ -620,7 +624,7 @@ input::-moz-placeholder {
 
 .calendar {
   position: absolute;
-  background-image: url(../img/calendar_icon.svg);
+  background-image: url(..//calendar_icon.svg);
   width: 21px;
   height: 23px;
   border: none;
@@ -825,7 +829,7 @@ input::-moz-placeholder {
 .field-tittle {
   font-size: 16px;
   line-height: 21px;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .field-item label {
@@ -833,11 +837,12 @@ input::-moz-placeholder {
   font-weight: normal;
   position: relative;
   display: inline-block;
+  vertical-align: top;
   cursor: pointer;
   user-select: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 .field-item .infrastructura-label-wrapper  {
@@ -1143,7 +1148,8 @@ border-bottom: 1px dotted var(--primary-decor-background);
 
 .hotel-name {
   display: inline-block;
-  margin-bottom: 4px;
+  vertical-align: top;
+  margin-bottom: 6px;
   color: var(--basic-black);
 }
 
@@ -1159,6 +1165,7 @@ border-bottom: 1px dotted var(--primary-decor-background);
   line-height: 26px;
   font-size: 21px;
   display: inline-block;
+  vertical-align: top;
   margin: 0;
 }
 
