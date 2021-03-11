@@ -475,6 +475,10 @@ padding: 0;
   background-color: var(--secondary-decor-background);
 }
 
+.button-close-form {
+  display: none;
+}
+
 .button-open:hover {
   background-color: var(--hover-secondary-button);
 }
@@ -624,13 +628,33 @@ input::-moz-placeholder {
 
 .calendar {
   position: absolute;
-  background-image: url(..//calendar_icon.svg);
   width: 21px;
   height: 23px;
   border: none;
   left: 430px;
   top: 7px;
   padding: 0;
+}
+
+.calendar:hover path {
+  fill: var(--basic-black);
+}
+
+.calendar:active path {
+  fill: var(--primary-decor-background);
+}
+
+.calendar:focus {
+  outline-width: 2px;
+  outline-offset: 3px;
+  outline-style: outset;
+}
+
+.more:focus,
+.less:focus {
+  outline-width: 2px;
+  outline-offset: 3px;
+  outline-style: outset;
 }
 
 .more {
