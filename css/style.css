@@ -258,6 +258,11 @@ outline-offset: -5px;*/
   z-index: 2
 }
 
+a:focus .main-header-logo {
+  outline: 2px solid #000;
+}
+
+
 /* Main content */
 
 .container {
@@ -473,10 +478,17 @@ padding: 0;
   width: 100%;
   min-height: 86px;
   background-color: var(--secondary-decor-background);
+  position: relative;
+  z-index: 3;
 }
 
 .button-close-form {
   display: none;
+
+}
+
+.button-form-animation {
+  animation: bounce 2s;
 }
 
 .button-open:hover {
@@ -572,7 +584,7 @@ input::-moz-placeholder {
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   position: absolute;
   background-color: var(--basic-white);
-  z-index: 3;
+  z-index: 2;
 }
 
 .form-item label {
@@ -716,6 +728,11 @@ input::-moz-placeholder {
   text-decoration: none;
 }
 
+.contact-phone:hover {
+  outline-offset: 2px;
+  outline: 2px solid #000;
+}
+
 .socials {
   padding-left: 13px;
   padding-bottom: 10px;
@@ -809,6 +826,10 @@ input::-moz-placeholder {
   fill: var(--active-logo-color);
 }
 
+.logo-button:focus {
+  outline-offset: 5px;
+  outline: 2px solid #000;
+}
 
 /* >> Filter << */
 
@@ -927,6 +948,12 @@ input::-moz-placeholder {
   height: 23px;
   top: 0;
   left: 0;
+}
+
+.filter-input-checkbox:focus + label,
+.filter-input-checkbox:hover + label {
+  outline-offset: 5px;
+  outline: 2px solid #000;
 }
 
 .range-filter {
@@ -1278,3 +1305,13 @@ padding: 3px 0 3px 0;
 .button-reserve:active {
   background-color: var(--active-secondary-button);
 }
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
