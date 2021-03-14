@@ -627,6 +627,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .form-item input::placeholder {
   color: var(--basic-black);
+  opacity: 1;
 }
 
 .min-max-cost input::-webkit-input-placeholder {
@@ -647,6 +648,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .min-max-cost input::placeholder {
   color: var(--basic-white);
+  opacity: 1;
 }
 
 /*
@@ -1212,6 +1214,11 @@ input::-moz-placeholder {
   color: var(--basic-black);
 }
 
+.range-filter .button-show-price:focus {
+  outline-offset: 3px;
+  outline: 2px solid #000;
+}
+
 /* >> Sorting list << */
 
 .sorting-list {
@@ -1448,6 +1455,12 @@ padding: 3px 0 3px 0;
   line-height: 21px;
   color: var(--basic-white);
   background-color: var(--secondary-decor-background);
+}
+
+.button-details:focus,
+.button-reserve:focus {
+  outline-offset: 3px;
+  outline: 2px solid #000;
 }
 
 .catalog-button-padding {
