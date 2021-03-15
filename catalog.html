@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico">
@@ -71,15 +71,17 @@
             <legend class="field-tittle field-title-wrapper">Стоимость в сутки (Р):</legend>
             <div class="range-filter">
               <div class="min-max-cost">
-                <input type="number" name="min-cost" placeholder="От 0">
-                <input type="number" name="max-cost" placeholder="До 3000">
+                <label for="from">От</label>
+                <input id="from" type="number" name="min-cost" placeholder="0">
+                <label for="to">До</label>
+                <input id="to" type="number" name="max-cost" placeholder="3000">
               </div>
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar" style="margin-left: 3%; width: 80%"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0" style="left: 0%"></div>
-                <div class="toggle toggle-max" tabindex="0" style="left: 80%"></div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 0%" aria-label="ручка-диапазон-мин"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 80%"aria-label="ручка-диапазон-макс"></div>
               </div>
               <button class="button-show-price" type="submit">Показать</button>
             </div>
