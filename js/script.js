@@ -17,6 +17,8 @@ try {
   isStorageSupport = false;
 }
 
+closeForm.classList.add('button-close-form');
+closeForm.classList.add('button-form-animation');
 
 openedForm.addEventListener("click", function () {
   closeForm.classList.toggle('button-close-form');

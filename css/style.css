@@ -46,7 +46,8 @@
 
   --primary-decor-background: #81B3D2;
   --secondary-decor-background: #766357;
-  --thirdly-decor-background: #F2F2F2;
+  --third-decor-background: #F2F2F2;
+  --fourth-decor-background: #27393b;
   --line-decor-color: #E5E5E5;
   --button-decor-color: #ABABAB;
 
@@ -65,7 +66,7 @@
 /* >>> Global <<< */
 
 .page-body {
-  min-width: 1280px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -74,7 +75,7 @@
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--thirdly-decor-background);
+  background-color: var(--third-decor-background);
 
   min-height: 100%;
   display: -ms-grid;
@@ -324,7 +325,7 @@ outline-offset: -5px;*/
 }
 
 a:focus .main-header-logo {
-  outline: 2px solid #000;
+  outline: 2px solid var(--basic-black);
 }
 
 
@@ -336,21 +337,27 @@ a:focus .main-header-logo {
 }
 
 .main-intro {
+  margin-bottom: 33px;
+}
+
+.intro-background {
   position: relative;
-  height: 631px;
+  height: 509px;
   background-image:
     url(../img/bg_photo_main.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
+  background-color: var(--fourth-decor-background);
+  margin-bottom: 32px;
 }
 
-.main-intro::after {
+.intro-background::after {
   content: "";
   background-image:
     url(../img/bg_photo_main_shape.svg);
   background-repeat: no-repeat;
-  bottom: 122px;
+  bottom: 0;
   position: absolute;
   width: 1200px;
   height: 57px;
@@ -365,11 +372,9 @@ a:focus .main-header-logo {
 .main-intro p {
   font-size: 21px;
   text-align: center;
+  padding: 10px;
   margin: 0;
-}
-
-.main-intro {
-  margin-bottom: 15px;
+  background-color: var(--basic-white);
 }
 
 .features p {
@@ -445,7 +450,7 @@ a:focus .main-header-logo {
 }
 
 .coloring-item {
-  padding-top: 50px;
+  padding: 50px 10px 10px 10px;
 }
 
 .second-feature-item {
@@ -476,7 +481,7 @@ a:focus .main-header-logo {
 .coloring-item {
   background-color: var(--primary-decor-background);
   color: var(--basic-white);
-  width: 400px;
+  width: 380px;
 
 }
 
@@ -730,7 +735,7 @@ input::-moz-placeholder {
 
 .form-item input,
 .adults-kids-wrapper input {
-  background-color: var(--thirdly-decor-background);
+  background-color: var(--third-decor-background);
   color: var(--basic-black);
   font-family: inherit;
   font-weight: bold;
@@ -756,7 +761,7 @@ input::-moz-placeholder {
 .adults-kids-wrapper {
   padding-left: 14px;
   width: 114px;
-  background-color: var(--thirdly-decor-background);
+  background-color: var(--third-decor-background);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -852,10 +857,6 @@ input::-moz-placeholder {
   text-decoration: none;
 }
 
-.contact-phone:hover {
-  outline-offset: 2px;
-  outline: 2px solid #000;
-}
 
 .socials {
   padding-left: 13px;
@@ -953,7 +954,7 @@ input::-moz-placeholder {
 
 .logo-button:focus {
   outline-offset: 5px;
-  outline: 2px solid #000;
+  outline: 2px solid var(--basic-black);
 }
 
 /* >> Filter << */
@@ -963,7 +964,7 @@ input::-moz-placeholder {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
-  background-color: #457191;
+  background-color: var(--fourth-decor-background);
   width: 100%;
   min-height: 217px;
   color: var(--basic-white);
@@ -1095,10 +1096,9 @@ input::-moz-placeholder {
   left: 0;
 }
 
-.filter-input-checkbox:focus + label,
-.filter-input-checkbox:hover + label {
+.filter-input-checkbox:focus + label {
   outline-offset: 5px;
-  outline: 2px solid #000;
+  outline: 2px solid var(--basic-black);
 }
 
 .range-filter {
@@ -1133,7 +1133,7 @@ input::-moz-placeholder {
   line-height: 21px;
   text-transform: uppercase;
   width: 144px;
-
+  color: var(--basic-white);
 }
 
 .min-max-cost input:first-child {
@@ -1216,7 +1216,7 @@ input::-moz-placeholder {
 
 .range-filter .button-show-price:focus {
   outline-offset: 3px;
-  outline: 2px solid #000;
+  outline: 2px solid var(--basic-black);
 }
 
 /* >> Sorting list << */
@@ -1282,7 +1282,7 @@ border-bottom: 1px dotted var(--primary-decor-background);
 
 .sorting-item a:active {
   color: var(--basic-black);
-  border-bottom: none;
+  border-bottom: 1px solid transparent;
 }
 
 .sorting-item-icon {
@@ -1396,7 +1396,7 @@ margin: 0;
 font-weight: normal;
 line-height: 21px;
 color: var(--basic-darkestgray);
-background-color: var(--thirdly-decor-background);
+background-color: var(--third-decor-background);
 text-align: center;
 width: 110px;
 padding: 3px 0 3px 0;
@@ -1460,7 +1460,7 @@ padding: 3px 0 3px 0;
 .button-details:focus,
 .button-reserve:focus {
   outline-offset: 3px;
-  outline: 2px solid #000;
+  outline: 2px solid var(--basic-black);
 }
 
 .catalog-button-padding {
