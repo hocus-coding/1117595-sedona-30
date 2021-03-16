@@ -17,14 +17,14 @@ try {
   isStorageSupport = false;
 }
 
-closeForm.classList.add('button-close-form');
-closeForm.classList.add('button-form-animation');
+closeForm.classList.add("button-close-form");
+closeForm.classList.add("button-form-animation");
 
 openedForm.addEventListener("click", function () {
-  closeForm.classList.toggle('button-close-form');
+  closeForm.classList.toggle("button-close-form");
   if (closeForm.classList.contains("button-close-form")) {
-  closeForm.classList.add('button-form-animation');
-  closeForm.classList.remove('form-error');
+  closeForm.classList.add("button-form-animation");
+  closeForm.classList.remove("form-error");
 }
   if (storage) {
   inputSumAdults.value = storage;
@@ -36,9 +36,9 @@ openedForm.addEventListener("click", function () {
 hotelForm.addEventListener("submit", function (evt) {
   if (!inputEnter.value || !inputExit.value || !inputSumAdults.value || !inputSumKids.value) {
     evt.preventDefault();
-    closeForm.classList.remove('form-error');
+    closeForm.classList.remove("form-error");
     closeForm.offsetWidth = closeForm.offsetWidth;
-    closeForm.classList.add('form-error');
+    closeForm.classList.add("form-error");
     console.log("fill the all form fields please.");
   }
   else {
