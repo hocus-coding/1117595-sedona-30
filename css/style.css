@@ -449,11 +449,11 @@ a:focus .main-header-logo {
 }
 
 .coloring-item {
-  padding: 50px 10px 10px 10px;
+  padding-top: 49px;
 }
 
 .coloring-item p {
-  padding: 0 30px 30px;
+  padding: 0 45px 50px;
 }
 
 .second-feature-item {
@@ -471,7 +471,7 @@ a:focus .main-header-logo {
 }
 
 .second-feature-item p {
-  padding: 0 70px;
+  padding: 0 71px;
 }
 
 .coloring-item h3,
@@ -492,7 +492,7 @@ a:focus .main-header-logo {
 .coloring-item {
   background-color: var(--primary-decor-background);
   color: var(--basic-white);
-  width: 380px;
+  width: 400px;
 
 }
 
